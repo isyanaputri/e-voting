@@ -61,7 +61,11 @@ $totalVoters = $pdo->query("SELECT COUNT(DISTINCT user_id) FROM event_participan
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <style>
-.table-dark-glass td, .table-dark-glass th { color:white; border-color:rgba(255,255,255,0.1); vertical-align:middle; }
+.table-dark-glass { background: transparent; --bs-table-bg: transparent; --bs-table-striped-bg: transparent; --bs-table-hover-bg: transparent; }
+.table-dark-glass thead tr { background: rgba(255,255,255,0.08); }
+.table-dark-glass tbody tr { background: rgba(255,255,255,0.04); }
+.table-dark-glass tbody tr:hover { background: rgba(255,255,255,0.1); }
+.table-dark-glass td, .table-dark-glass th { color: #f1f5f9; border-color:rgba(255,255,255,0.1); vertical-align:middle; }
 .form-control { background:rgba(255,255,255,0.1) !important; border:1px solid rgba(255,255,255,0.2) !important; color:white !important; }
 .form-control::placeholder { color:#94a3b8; }
 .form-control:focus { box-shadow:0 0 0 0.25rem rgba(250,204,21,0.25) !important; border-color:#facc15 !important; }
