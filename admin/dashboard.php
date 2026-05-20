@@ -28,7 +28,11 @@ $electionTitle = getSetting($pdo, 'election_title', 'TrustVote Platform');
 .stat-card { text-align:center; padding: 28px 20px; }
 .stat-number { font-size: 46px; font-weight: 700; color: #facc15; }
 .stat-label { color: #cbd5e1; font-size: 13px; margin-top: 4px; }
-.table-dark-glass td, .table-dark-glass th { color: white; border-color: rgba(255,255,255,0.1); vertical-align: middle; }
+.table-dark-glass { background: transparent; --bs-table-bg: transparent; --bs-table-striped-bg: transparent; --bs-table-hover-bg: transparent; }
+.table-dark-glass thead tr { background: rgba(255,255,255,0.08); }
+.table-dark-glass tbody tr { background: rgba(255,255,255,0.04); }
+.table-dark-glass tbody tr:hover { background: rgba(255,255,255,0.1); }
+.table-dark-glass td, .table-dark-glass th { color: #f1f5f9; border-color: rgba(255,255,255,0.1); vertical-align: middle; }
 .nav-link.active { color: #facc15 !important; font-weight: 600; }
 </style>
 </head>
@@ -76,20 +80,6 @@ $electionTitle = getSetting($pdo, 'election_title', 'TrustVote Platform');
 </div>
 </div>
 
-<div class="row g-4 mb-5">
-<div class="col-12">
-<div class="glass-card p-4">
-<h4 class="mb-3">⚡ Aksi Cepat</h4>
-<div class="d-flex gap-3 flex-wrap">
-<a href="events.php" class="btn btn-warning">🗂️ Kelola Event</a>
-<a href="candidates.php" class="btn btn-outline-warning">🧑‍💼 Kelola Kandidat</a>
-<a href="users.php" class="btn btn-outline-warning">👥 Kelola Pengguna</a>
-<a href="votes.php" class="btn btn-outline-warning">🗳️ Lihat Data Vote</a>
-<a href="settings.php" class="btn btn-outline-warning">⚙️ Pengaturan</a>
-</div>
-</div>
-</div>
-</div>
 
 <div class="glass-card p-4">
 <h4 class="mb-4">🕐 Vote Terbaru</h4>
