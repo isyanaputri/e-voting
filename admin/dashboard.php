@@ -43,7 +43,7 @@ $electionTitle = getSetting($pdo, 'election_title', 'TrustVote Platform');
 <div class="container py-5">
 
 <div class="text-center mb-5">
-<h1 class="title">📊 Admin Dashboard</h1>
+<h1 class="title">Admin Dashboard</h1>
 <p class="subtitle"><?= htmlspecialchars($electionTitle) ?></p>
 </div>
 
